@@ -7,7 +7,7 @@ type Props = {
     onChange: Function;
 }
 
-function Pagination({ page, onChange } : Props) {
+export default function Pagination({ page, onChange } : Props) {
 
     return (
         <div className="dsmovie-pagination-container">
@@ -23,5 +23,3 @@ function Pagination({ page, onChange } : Props) {
         </div>
     )
 }
-
-export default Pagination

@@ -6,7 +6,7 @@ import { BASE_URL } from "../../utils/requests";
 import { MoviePage } from "../../types/movie";
 
 
-function Listing() {
+export default function Listing() {
     const [pageNumber, setPageNumber] = useState(0)
     const [page, setPage] = useState<MoviePage>({
         content: [],
@@ -47,5 +47,3 @@ function Listing() {
         </>
     )
 }
-
-export default Listing
